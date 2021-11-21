@@ -35,3 +35,34 @@
   border: none;
   outline-width: 0;
 }
+
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header__navOption {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+.header__navOptionLineOne {
+  font-size: 10px;
+}
+
+.header__navOptionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header__navOptionBusket {
+  color: white;
+  align-items: center;
+  display: flex;
+}
+
+.header__navbusketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}

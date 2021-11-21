@@ -1,9 +1,9 @@
 import "./App.css";
-
+import { Header } from "./components/Header.jsx";
 function App() {
   return (
     <div className="app">
-      <h1>Let start Amazon build</h1>
+      <Header />
     </div>
   );
 }

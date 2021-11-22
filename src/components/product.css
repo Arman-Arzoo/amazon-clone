@@ -22,7 +22,13 @@
 .product__price {
   margin-top: 5px;
 }
+.product__rating {
+  display: flex;
+}
 
+.product__rating > .MuiSvgIcon-root {
+  color: #f0c14b;
+}
 .product__info {
   height: 100px;
   margin-bottom: 15px;

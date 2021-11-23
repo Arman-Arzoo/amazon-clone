@@ -13,7 +13,7 @@ export const Home = () => {
         />
         <div className="home__row">
           <Product
-            title="You title is here you can chage it"
+            title="You title is here you can chage it ssssssssssssssssssssssssssssssssssssssssssssssssssss"
             price="50"
             rating={5}
             img="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/October/GiftGuides/XCM_CUTTLE_1370663_1923434_CA_379x304_1X_en_CA._SY304_CB654091123_.jpg"

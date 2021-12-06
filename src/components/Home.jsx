@@ -11,6 +11,7 @@ export const Home = () => {
           src="https://m.media-amazon.com/images/I/61jovjd+f9L._SX3000_.jpg"
           alt=""
         />
+
         <div className="home__row">
           <Product
             title="You title is here you can chage it ssssssssssssssssssssssssssssssssssssssssssssssssssss"

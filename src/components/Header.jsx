@@ -2,17 +2,18 @@ import React from "react";
 import "./header.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ShopingBustketIcon from "@material-ui/icons/ShoppingBasket";
-
+import { NavLink } from "react-router-dom";
 export const Header = () => {
   return (
     <>
       <div className="header">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiY_ABgnclSsHClv2v1T-CJ3taKt16phhwe-FzXWg6qM4A5oEK-xHmNr7RH8KRPeZk7A&usqp=CAU"
-          alt=""
-          className="header__logo"
-        />
-
+        <NavLink to="/">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiY_ABgnclSsHClv2v1T-CJ3taKt16phhwe-FzXWg6qM4A5oEK-xHmNr7RH8KRPeZk7A&usqp=CAU"
+            alt=""
+            className="header__logo"
+          />
+        </NavLink>
         <div className="header__search">
           <input type="text" className="header__searchInput" />
           <SearchIcon className="header__searchIcon" />

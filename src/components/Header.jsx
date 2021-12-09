@@ -34,12 +34,14 @@ export const Header = () => {
             <span className="header__navOptionLineTwo">Prime</span>
           </div>
 
-          <div className="header__navOptionBusket">
-            <ShopingBustketIcon />
-            <span className="header__navbusketCount header__navOptionLineTwo">
-              0
-            </span>
-          </div>
+          <NavLink to="/checkout">
+            <div className="header__navOptionBusket">
+              <ShopingBustketIcon />
+              <span className="header__navbusketCount header__navOptionLineTwo">
+                0
+              </span>
+            </div>
+          </NavLink>
         </div>
       </div>
     </>

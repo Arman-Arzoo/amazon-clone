@@ -11,7 +11,7 @@ export const CheckOut = () => {
           alt=""
         />
         <div>
-          <h3 className="checkout__title">Your SHopping Basket</h3>
+          <h3 className="checkout__title">Your Shopping Basket</h3>
         </div>
       </div>
       <div className="checkout__right">

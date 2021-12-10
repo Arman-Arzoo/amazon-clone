@@ -9,7 +9,7 @@ export const SubTotal = () => {
         renderText={(value) => (
           <>
             <p>
-              Subtotal (0 items) : <strong>0</strong>
+              Subtotal (0 items) : <strong>{value}</strong>
             </p>
             <small className="subtotal__gift">
               <input type="checkbox" />
@@ -18,7 +18,7 @@ export const SubTotal = () => {
           </>
         )}
         decimalScale={2}
-        value={0}
+        value={10.5454}
         displayType={"text"}
         thousandSeparator={true}
         prefix={"$"}

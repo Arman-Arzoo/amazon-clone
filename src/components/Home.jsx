@@ -14,12 +14,14 @@ export const Home = () => {
 
         <div className="home__row">
           <Product
+            id="1"
             title="You title is here you can chage it ssssssssssssssssssssssssssssssssssssssssssssssssssss"
             price="50"
             rating={5}
             img="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/October/GiftGuides/XCM_CUTTLE_1370663_1923434_CA_379x304_1X_en_CA._SY304_CB654091123_.jpg"
           />
           <Product
+            id="2"
             title="You title is here you can chage it"
             price="50"
             rating={5}
@@ -29,18 +31,21 @@ export const Home = () => {
 
         <div className="home__row">
           <Product
+            id="3"
             title="You title is here you can chage it"
             price="50"
             rating={5}
             img="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/October/GiftGuides/XCM_CUTTLE_1370663_1923434_CA_379x304_1X_en_CA._SY304_CB654091123_.jpg"
           />
           <Product
+            id="4"
             title="You title is here you can chage it"
             price="50"
             rating={5}
             img="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/October/GiftGuides/XCM_CUTTLE_1370663_1923434_CA_379x304_1X_en_CA._SY304_CB654091123_.jpg"
           />
           <Product
+            id="5"
             title="You title is here you can chage it"
             price="50"
             rating={5}
@@ -50,6 +55,7 @@ export const Home = () => {
 
         <div className="home__row">
           <Product
+            id="6"
             title="You title is here you can chage it"
             price="50"
             rating={5}

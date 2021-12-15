@@ -1,25 +1,11 @@
 import React from "react";
 import StarIcon from "@material-ui/icons/Star";
 import "./product.css";
-import { useStateValue } from "../StateProvider";
+import { addToBusket } from "../redux/action/busket.js";
+import { useDispatch } from "react-redux";
 
 export const Product = ({ id, title, price, rating, img }) => {
-  const [{ basket }, dispatch] = useStateValue();
-  console.log("state", basket);
-
-  const addToBasket = () => {
-    dispatch({
-      type: "ADD_TO_BASKET",
-      item: {
-        id: id,
-        title: title,
-        price: price,
-        rating: rating,
-        img: img,
-      },
-    });
-  };
-
+  const dispatch = useDispatch();
   return (
     <div className="product">
       <div className="product__info">
@@ -41,7 +27,7 @@ export const Product = ({ id, title, price, rating, img }) => {
 
       <button
         onClick={() => {
-          addToBasket();
+          dispatch(addToBusket(id, title, price, rating, img));
         }}
       >
         Add to Busket

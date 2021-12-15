@@ -1,10 +1,10 @@
 export const initialState = {
-  basket: [{ id: 45 }],
+  basket: [],
 };
 
-const reducer = (state, action) => {
+const reducer = (state = initialState, action) => {
   console.log(action);
-  console.log(state.basket);
+  console.log(state);
 
   switch (action.type) {
     case "ADD_TO_BUSKET":

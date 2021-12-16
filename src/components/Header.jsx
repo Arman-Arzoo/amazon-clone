@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 
 export const Header = () => {
   const buskets = useSelector((state) => state.busket);
-  console.log("buskets", buskets);
+
   return (
     <>
       <div className="header">

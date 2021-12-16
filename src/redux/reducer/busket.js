@@ -1,7 +1,5 @@
 import { ADD_TO_BUSKET } from "../actionTypes";
-export default (busket = [{}], action) => {
-  console.log(action.item);
-  console.log("busket value", busket);
+const busket = (busket = [], action) => {
   switch (action.type) {
     case ADD_TO_BUSKET:
       return [...busket, action.item];
@@ -10,3 +8,5 @@ export default (busket = [{}], action) => {
       return busket;
   }
 };
+
+export default busket;

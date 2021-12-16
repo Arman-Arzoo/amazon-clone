@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 
 export const Product = ({ id, title, price, rating, img }) => {
   const dispatch = useDispatch();
+
   return (
     <div className="product">
       <div className="product__info">
@@ -19,7 +20,7 @@ export const Product = ({ id, title, price, rating, img }) => {
           {Array(rating)
             .fill()
             .map((_, i) => (
-              <StarIcon />
+              <StarIcon key={i} />
             ))}
         </div>
       </div>

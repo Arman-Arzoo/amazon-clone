@@ -1,15 +1,27 @@
 import React from "react";
 import "./subTotal.css";
 import CurrencyFormat from "react-currency-format";
+import { useSelector } from "react-redux";
 
 export const SubTotal = () => {
+
+  const busketCounts = useSelector(state=> state.busket);
+
+
+  const getBusketTotal = (busket)=>{
+    console.log("i am from busket", busket)
+    busket?.reduce((amount,item)=> item.price + amount,0);
+    
+  }
+  
+  
   return (
     <div className="subtotal">
       <CurrencyFormat
         renderText={(value) => (
           <>
             <p>
-              Subtotal (0 items) : <strong>{value}</strong>
+              Subtotal ({busketCounts.length} items) : <strong>{value}</strong>
             </p>
             <small className="subtotal__gift">
               <input type="checkbox" />
@@ -18,7 +30,7 @@ export const SubTotal = () => {
           </>
         )}
         decimalScale={2}
-        value={10.5454}
+        value={getBusketTotal(busketCounts)}
         displayType={"text"}
         thousandSeparator={true}
         prefix={"$"}

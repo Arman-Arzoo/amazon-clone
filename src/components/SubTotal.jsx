@@ -7,14 +7,10 @@ export const SubTotal = () => {
 
   const busketCounts = useSelector(state=> state.busket);
 
+ const getBusketTotal = (busket) =>(
+    busket?.reduce((amount,item)=>item.price+amount,0)
+  )
 
-  const getBusketTotal = (busket)=>{
-    console.log("i am from busket", busket)
-    busket?.reduce((amount,item)=> item.price + amount,0);
-    
-  }
-  
-  
   return (
     <div className="subtotal">
       <CurrencyFormat
@@ -23,7 +19,7 @@ export const SubTotal = () => {
             <p>
               Subtotal ({busketCounts.length} items) : <strong>{value}</strong>
             </p>
-            <small className="subtotal__gift">
+               <small className="subtotal__gift">
               <input type="checkbox" />
               This order contains a gift
             </small>
@@ -37,6 +33,10 @@ export const SubTotal = () => {
       />
 
       <button>Proceed to checkout</button>
+
+    
+       
+    
     </div>
   );
 };

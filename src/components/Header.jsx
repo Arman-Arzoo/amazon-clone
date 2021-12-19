@@ -23,10 +23,12 @@ export const Header = () => {
           <SearchIcon className="header__searchIcon" />
         </div>
         <div className="header__nav">
-          <div className="header__navOption">
-            <span className="header__navOptionLineOne">Hello </span>
-            <span className="header__navOptionLineTwo">Sign in</span>
-          </div>
+          <NavLink to="/login">
+            <div className="header__navOption">
+              <span className="header__navOptionLineOne">Hello </span>
+              <span className="header__navOptionLineTwo">Sign in</span>
+            </div>
+          </NavLink>
 
           <div className="header__navOption">
             <span className="header__navOptionLineOne">Retrun</span>

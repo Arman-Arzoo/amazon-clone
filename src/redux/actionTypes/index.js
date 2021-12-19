@@ -1,1 +1,2 @@
 export const ADD_TO_BUSKET = "ADD_TO_BUSKET";
+export const REMOVE_FROM_BUSKET = "REMOVE_FORM_BUSKET";

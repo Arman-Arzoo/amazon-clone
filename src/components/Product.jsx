@@ -5,7 +5,7 @@ import { addToBusket } from "../redux/action/busket.js";
 import { useDispatch } from "react-redux";
 
 export const Product = ({ id, title, price, rating, img }) => {
-  console.log(price)
+
   const dispatch = useDispatch();
 
   return (

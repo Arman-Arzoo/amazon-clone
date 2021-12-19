@@ -7,6 +7,8 @@ import { useSelector } from "react-redux";
 export const CheckOut = () => {
 
   const buskets = useSelector((state) => state.busket);
+
+
   return (
     <div className="checkout">
       <div className="checkout__left">
@@ -21,7 +23,9 @@ export const CheckOut = () => {
 
           {
             buskets?.map(item => (
-              <CheckOutProduct id={item.id}
+
+              <CheckOutProduct key={item.id}
+                id={item.id}
                 price={item.price}
                 rating={item.rating}
                 title={item.title}

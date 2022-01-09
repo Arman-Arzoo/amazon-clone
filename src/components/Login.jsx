@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './login.css'
 
 export const Login = () => {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("")
+
+    const signIn = (e) => {
+        e.preventDefault();
+    }
+    const register = (e) => {
+        e.preventDefault();
+    }
     return (
         <div className='login'>
 
@@ -12,16 +21,16 @@ export const Login = () => {
 
                 <form >
                     <h5>Email</h5>
-                    <input type="text" />
+                    <input type="text" value={email} onChange={e => setEmail(e.target.value)} />
 
                     <h5>Password</h5>
-                    <input type="password" />
+                    <input type="password" value={password} onChange={e => setPassword(e.target.value)} />
 
-                    <button className='login__signInButton'>Sign In</button>
+                    <button type='submit' className='login__signInButton' onClick={signIn}>Sign In</button>
                 </form>
 
                 <p>By signing-in you agree to the Fake amazon conditions of use and sale.Please see our Privacy Notice our Cookies Notice and our interest-based ads notice</p>
-                <button className='login__registerButton'>Create your Amazon Account</button>
+                <button type='submit' onClick={register} className='login__registerButton'>Create your Amazon Account</button>
 
 
 
